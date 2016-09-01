@@ -7,6 +7,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
@@ -223,6 +225,9 @@ header .header-content .header-content-inner p {
 .service-box p {
   margin-bottom: 0;
 }
+#portfolio > div {
+  padding-top: 100px;
+}
 .portfolio-box {
   position: relative;
   display: block;
@@ -413,4 +418,11 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+footer.site-footer {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+footer.site-footer a {
+  color: inherit;
 }
