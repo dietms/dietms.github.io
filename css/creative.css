@@ -94,6 +94,9 @@ aside {
   font-size: 13px;
   color: #222222;
 }
+.navar-default .nav > li > a.active {
+  color: #F05F40;
+}
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
   color: #F05F40;
