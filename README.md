@@ -1,4 +1,9 @@
 # Deogiri Institute of Engineering and Management Studies
 
-This repository contains the code for the coding club website.
-We are planning to use it to host the web pages for all the clubs, so that information is accessible online to everyone.
+#2B||!2B - The Coding Club
+
+This repository hosts the club's github pages website. It is live at http://dietms.github.io
+
+The Official website for the college is at http://dietms.org
+
+Wish to contribute? Start by creating a branch and sending in a pull request with any improvement, we check it everyday, promise! :)
