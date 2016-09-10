@@ -25,6 +25,29 @@
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
 
+    <style>
+    #question {
+      position:fixed;
+      bottom:0px;
+      right:20px;
+      padding:10px;
+      margin:0;
+      border-radius: 10px 10px 0px 0px;
+      border-top: 3px solid #4A148C;
+      background-color: #AA00FF;
+      box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+    #question a {
+      text-decoration: none;
+    }
+    #question p {
+      margin:0;
+      font-weight: lighter;
+      color: #fff;
+    }
+    </style>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -266,6 +289,10 @@
         </div>
     </section>
 
+    <aside id="question" class="hidden-xs">
+      <a href="https://goo.gl/forms/tSnrIqKsXOucnf9s2" target="_blank"><p>Ask us a Question</p></a>
+    </aside>
+
     <footer class="site-footer bg-primary">
         <div class="container">
             <div class="row text-center">
@@ -279,7 +306,6 @@
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/jquery-scrollTo/jquery.scrollTo.min.js "></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
