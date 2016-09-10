@@ -26,6 +26,7 @@
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
     <style>
+        /*.navbar*/
         .navbar-default .navbar-header .navbar-brand {
             color: #F05F40;
         }
@@ -38,7 +39,29 @@
         .navbar-default .nav> li> a:focus:hover,
         .navbar-default .nav> li> a:hover {
             color: #F05F40;
+        } /*.navbar END*/
+
+        /*Contact Button*/
+        #question {
+          position:fixed;
+          bottom:0px;
+          right:20px;
+          padding:10px;
+          margin:0;
+          border-radius: 10px 10px 0px 0px;
+          border-top: 3px solid #4A148C;
+          background-color: #AA00FF;
+          box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
+          z-index: 1000;
         }
+        #question a {
+          text-decoration: none;
+        }
+        #question p {
+          margin:0;
+          font-weight: lighter;
+          color: #fff;
+        } /*Contact Button END*/
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -56,10 +79,10 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">~/DIEMS</a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">~/DIEMS</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -81,7 +104,7 @@
                         <a class="page-scroll" href="blog">Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="https://goo.gl/forms/tSnrIqKsXOucnf9s2" target="_blank">Contact Us</a>
+                        <a class="page-scroll" href="index.html#contact">Contact Us</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="http://dietms.org">DIETMS Home</a>
@@ -156,6 +179,11 @@
             </div>
         </div>
     </section>
+
+    <aside id="question" class="hidden-xs">
+      <a href="https://goo.gl/forms/tSnrIqKsXOucnf9s2" target="_blank"><p>Ask us a Question</p></a>
+    </aside>
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
