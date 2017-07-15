@@ -1,324 +1,330 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
 
-<head>
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="2B||!2B is a community of students highly enthusiastic about coding.We are the students of Deogiri Institute of Engineering and Management Studies, Aurangabad, Maharashtra.">
-    <meta name="author" content="DIETMS, Aurangabad">
-    <meta name="keywords" content="deogiri,college,aurangabad,programming,club,maharashtra,engineering,dietms,diems,bamu,best,top,marathwada">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>2b||!2b Coding Club</title>
 
-    <title>2B||!2B - The coding club</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/creative.css" rel="stylesheet">
-
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-    #question {
-      position:fixed;
-      bottom:0px;
-      right:20px;
-      padding:10px;
-      margin:0;
-      border-radius: 10px 10px 0px 0px;
-      border-top: 3px solid #4A148C;
-      background-color: #AA00FF;
-      box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
-      z-index: 1000;
-    }
-    #question a {
-      text-decoration: none;
-    }
-    #question p {
-      margin:0;
-      font-weight: lighter;
-      color: #fff;
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
     }
     </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <a>2b||!2b Coding Club</a>
 
-</head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand page-scroll" href="#page-top">~/DIETMS</a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                      <a class="page-scroll" href="#home">Home</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="#portfolio">Projects</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="#contact">Contact Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="team.html">The Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="blog/">Blog</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://github.com/dietms/">Repositories</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+          </div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <a href="/">2b||!2b Coding Club</a>
+          </span>
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">5.0 Lollipop</li>
+            <li class="mdl-menu__item">4.4 KitKat</li>
+            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+            <li class="mdl-menu__item">Android History</li>
+          </ul>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+      </div>
 
-    <header id="home">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <img src="img/ClubLogo.png" height="25%" width="25%" alt="" />
-                <h1 id="homeHeading">2B||!2B - The coding club</h1>
-                <a href="https://www.hackerearth.com" target="_blank"><img src="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/badge/HE_badge_on_dark.png" alt="HackerEarth badge"></a>
-                <p>Talk is cheap, show us the code!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-            </div>
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="images/android-logo-white.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Phones</a>
+          <a class="mdl-navigation__link" href="">Tablets</a>
+          <a class="mdl-navigation__link" href="">Wear</a>
+          <a class="mdl-navigation__link" href="">TV</a>
+          <a class="mdl-navigation__link" href="">Auto</a>
+          <a class="mdl-navigation__link" href="">One</a>
+          <a class="mdl-navigation__link" href="">Play</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Versions</span>
+          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+          <a class="mdl-navigation__link" href="">Android history</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Resources</span>
+          <a class="mdl-navigation__link" href="">Official blog</a>
+          <a class="mdl-navigation__link" href="">Android on Google+</a>
+          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">For developers</span>
+          <a class="mdl-navigation__link" href="">App developer resources</a>
+          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
+          <a class="mdl-navigation__link" href="">Android SDK</a>
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="logo-font android-slogan">be together. not the same.</div>
+          <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
+          <div class="logo-font android-create-character">
+            <a href=""><img src="images/andy.png"> create your android character</a>
+          </div>
+
+          <a href="#screens">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+              <i class="material-icons">expand_more</i>
+            </button>
+          </a>
         </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">About Us</h2>
-                    <hr class="light">
-                    <p class="lead">
-                        2B||!2B is a community of students highly enthusiastic about coding, Web Designing and all other aspects of programming. Activities organised by the club can be broadly organised into Development (Web Development, Open Source, App Development) and programming
-                        contests. Lecture series are regularly taken on algorithms, open source technologies and app development platforms.
-                    </p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
-                </div>
+        <div class="android-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
+          <div class="android-screens">
+            <div class="android-wear android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/wear-silver-on.png">
+                <img class="android-screen-image" src="images/wear-black-on.png">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
             </div>
+            <div class="android-phone android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus6-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+            </div>
+            <div class="android-tablet android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus9-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+            </div>
+            <div class="android-tv android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/tv-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/auto-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <section id="goals">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Mission</h2>
-                    <hr class="primary">
-                </div>
+        <div class="android-wear-section">
+          <div class="android-wear-band">
+            <div class="android-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                Android works perfectly with your favourite apps like Google Maps,
+                Calendar and YouTube.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
             </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Make programming fun</h3>
-                        <p class="text-muted">We learn by doing</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Develop Logic</h3>
-                        <p class="text-muted">Because innovation is rare</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Learn something new</h3>
-                        <p class="text-muted">Learning at the speed of Life</p>
-                    </div>
-                </div>
-            </div>
+        <div class="android-customized-section">
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+            <p class="mdl-typography--font-light">
+              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+              <br>
+              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+            </p>
+          </div>
+          <div class="android-customized-section-image"></div>
         </div>
-    </section>
+        <div class="android-more-section">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+          <div class="android-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get going on Android</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Make the switch
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
 
-    <section id="portfolio" class="no-padding">
-        <div class="container-fluid bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Our Projects</h2>
-                        <hr class="primary">
-                    </div>
-                </div>
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   androidify.com
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
             </div>
-            <div class="row no-gutter popup-gallery ">
-                <div class="col-lg-4 col-sm-6 ">
-                    <a href="img/portfolio/fullsize/1.jpg " class="portfolio-box ">
-                        <img src="img/portfolio/thumbnails/1.jpg " class="img-responsive " alt=" ">
-                        <div class="portfolio-box-caption ">
-                            <div class="portfolio-box-caption-content ">
-                                <div class="project-category text-faded ">
-                                    Website
-                                </div>
-                                <div class="project-name ">
-                                    DIEMS Website
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 ">
-                    <a href="img/portfolio/fullsize/2.jpg " class="portfolio-box ">
-                        <img src="img/portfolio/thumbnails/2.jpg " class="img-responsive " alt=" ">
-                        <div class="portfolio-box-caption ">
-                            <div class="portfolio-box-caption-content ">
-                                <div class="project-category text-faded ">
-                                    Category
-                                </div>
-                                <div class="project-name ">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 ">
-                    <a href="img/portfolio/fullsize/3.jpg " class="portfolio-box ">
-                        <img src="img/portfolio/thumbnails/3.jpg " class="img-responsive " alt=" ">
-                        <div class="portfolio-box-caption ">
-                            <div class="portfolio-box-caption-content ">
-                                <div class="project-category text-faded ">
-                                    Category
-                                </div>
-                                <div class="project-name ">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 ">
-                    <a href="img/portfolio/fullsize/4.jpg " class="portfolio-box ">
-                        <img src="img/portfolio/thumbnails/4.jpg " class="img-responsive " alt=" ">
-                        <div class="portfolio-box-caption ">
-                            <div class="portfolio-box-caption-content ">
-                                <div class="project-category text-faded ">
-                                    Category
-                                </div>
-                                <div class="project-name ">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 ">
-                    <a href="img/portfolio/fullsize/5.jpg " class="portfolio-box ">
-                        <img src="img/portfolio/thumbnails/5.jpg " class="img-responsive " alt=" ">
-                        <div class="portfolio-box-caption ">
-                            <div class="portfolio-box-caption-content ">
-                                <div class="project-category text-faded ">
-                                    Category
-                                </div>
-                                <div class="project-name ">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6 ">
-                    <a href="img/portfolio/fullsize/6.jpg " class="portfolio-box ">
-                        <img src="img/portfolio/thumbnails/6.jpg " class="img-responsive " alt=" ">
-                        <div class="portfolio-box-caption ">
-                            <div class="portfolio-box-caption-content ">
-                                <div class="project-category text-faded ">
-                                    Category
-                                </div>
-                                <div class="project-name ">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download now
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
             </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-3.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Find apps
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <section id="contact">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-lg-8 col-lg-offset-2 text-center ">
-                    <h2 class="section-heading ">Let's Get In Touch!</h2>
-                    <hr class="primary ">
-                    <p>Want to develop your project? We'll be happy to! Contact us at:</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center ">
-                    <i class="fa fa-phone fa-3x sr-contact "></i>
-                    <p><a href="tel:+918793549357">+918793549357</a></p>
-                </div>
-                <div class="col-lg-4 text-center ">
-                    <i class="fa fa-envelope-o fa-3x sr-contact "></i>
-                    <p><a href="mailto:admin@dietms.org ">Click here to send us a mail</a></p>
-                </div>
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
             </div>
-        </div>
-    </section>
-
-    <aside id="question" class="hidden-xs">
-      <a href="https://goo.gl/forms/tSnrIqKsXOucnf9s2" target="_blank"><p>Ask us a Question</p></a>
-    </aside>
-
-    <footer class="site-footer bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <span class="col-md-12">
-                    &copy; <script>document.write(new Date().getFullYear());</script>,
-                    <a href="http://dietms.org">Deogiri Institute of Engineering and Management Studies</a>
-                </span>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
             </div>
-        </div>
-    </footer>
+          </div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js "></script>
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
+            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+          </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+              Versions
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+              <li class="mdl-menu__item">5.0 Lollipop</li>
+              <li class="mdl-menu__item">4.4 KitKat</li>
+              <li class="mdl-menu__item">4.3 Jelly Bean</li>
+              <li class="mdl-menu__item">Android History</li>
+            </ul>
+            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+              For Developers
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+              <li class="mdl-menu__item">App developer resources</li>
+              <li class="mdl-menu__item">Android Open Source Project</li>
+              <li class="mdl-menu__item">Android SDK</li>
+              <li class="mdl-menu__item">Android for Work</li>
+            </ul>
+            <a class="android-link mdl-typography--font-light" href="">Blog</a>
+            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js "></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js "></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js "></script>
-
-</body>
-
+        </footer>
+      </div>
+    </div>
+    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
 </html>
